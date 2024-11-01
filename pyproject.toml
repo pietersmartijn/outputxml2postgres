@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "outputxml2postgres"
+version = "0.1.0"
+description = "Python script to parse the output.xml data to a postgres database"
+authors = ["Martijn Pieters <martijn.pieters@kadaster.nl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+robotframework = "^7.1.1"
+sqlalchemy = "^2.0.36"
+psycopg2 = "^2.9.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
