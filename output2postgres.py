@@ -11,7 +11,7 @@ engine = create_engine(f"postgresql://{os.environ['DB_USERNAME']}:{os.environ['D
 class TestRun(Base):
     __tablename__ = "testrun_results"
     id = Column(Integer, Sequence('testrun_id_seq'), primary_key=True)
-    testsuite = Column("testsuite", String)
+    testrun = Column("testsuite", String)
     passed = Column("passed", Integer)
     failed = Column("failed", Integer)
     skipped = Column("skipped", Integer)
